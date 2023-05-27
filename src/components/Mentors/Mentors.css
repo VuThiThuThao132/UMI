@@ -1,0 +1,81 @@
+.section {
+    color: white;
+    font-size: 40px;
+}
+
+.mentors .item-list {
+    margin-top: 30px;
+    row-gap: 30px;
+    color: white;
+}
+
+.mentors .item {
+    padding: 48px 16px;
+    position: relative;
+    transition: var(--transition);
+
+}
+
+.mentors .item::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 5px;
+    background: rgb(87, 100, 222);
+    background: linear-gradient(45deg, rgba(87, 100, 222, 1) 0%, rgba(85, 179, 213, 1) 100%);
+    transition: var(--transition);
+
+}
+
+.mentors .item:hover::after {
+    width: 100%;
+
+}
+
+.mentors .item-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 28px;
+}
+
+.mentors .item-name {
+    font-size: 25px;
+
+}
+
+.mentors .item-rating {
+    margin-top: 35px;
+}
+
+.mentors .item-rating li {
+    margin: 0 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .mentors .section-t {
+        text-align: center;
+    }
+
+    .mentors .section-t::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .mentors .item-list {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .mentors .item-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

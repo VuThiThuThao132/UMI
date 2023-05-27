@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
-
+//npm install react-icons --save
+//npm i react-router-dom@6
+import Header from './components/Header/Header';
+import "./assets/js/script";
+import Services from './components/Services/Services';
+import Mentors from './components/Mentors/Mentors';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Services />
+      <Mentors />
     </div>
   );
 }

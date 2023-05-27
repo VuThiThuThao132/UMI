@@ -1,0 +1,15 @@
+.header img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.container1 {
+    width: 90%;
+    /* height: 100vh; */
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.container1 img {
+    margin-top: 100px;
+}
