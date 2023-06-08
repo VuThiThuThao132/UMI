@@ -4,6 +4,13 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    box-sizing: border-box;
+
+}
+
+a {
+    text-decoration: none;
+    color: unset;
 }
 
 .navbar {
@@ -15,10 +22,12 @@
     z-index: 999;
     background-color: rgb(43, 10, 38);
     color: white;
+    font-size: 10px;
 }
 
 .navbar-brand {
     margin-top: 10px;
+
 }
 
 .hamburger-menu {
@@ -29,6 +38,7 @@
     width: 34px;
     cursor: pointer;
     z-index: 10;
+
 
 }
 
